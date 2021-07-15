@@ -15,7 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
-      - run: docker buildx inspect
       - uses: docker/build-push-action@v2
         with:
           context: e2e-test

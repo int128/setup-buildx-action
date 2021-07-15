@@ -9,3 +9,4 @@ curl -sfSL -o ~/.docker/cli-plugins/docker-buildx "$binary_url"
 chmod +x ~/.docker/cli-plugins/docker-buildx
 docker buildx create --use
 docker buildx version
+docker buildx inspect
