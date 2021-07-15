@@ -1,4 +1,4 @@
-# setup-buildx-action
+# setup-buildx-action [![e2e](https://github.com/int128/setup-buildx-action/actions/workflows/e2e-test.yaml/badge.svg)](https://github.com/int128/setup-buildx-action/actions/workflows/e2e-test.yaml)
 
 This is an action to install a binary of Docker buildx from https://github.com/docker/buildx.
 
