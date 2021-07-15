@@ -1,5 +1,9 @@
 name: setup-buildx
 description: setup Docker buildx binary
+inputs:
+  driver-opts:
+    description: List of additional driver-specific options
+    required: false
 runs:
   using: composite
   steps:
@@ -8,3 +12,4 @@ runs:
       id: run
       env:
         BUILDX_VERSION: v0.5.1
+        BUILDX_DRIVER_OPTS: ${{ inputs.driver-opts }}
