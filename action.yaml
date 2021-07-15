@@ -1,0 +1,10 @@
+name: setup-buildx
+description: setup Docker buildx binary
+runs:
+  using: composite
+  steps:
+    - run: ${{ github.action_path }}/run.sh
+      shell: bash
+      id: run
+      env:
+        BUILDX_VERSION: v0.5.1
