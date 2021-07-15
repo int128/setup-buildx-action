@@ -14,3 +14,9 @@ jobs:
       - uses: int128/setup-buildx-action@main
       - uses: docker/build-push-action@v2
 ```
+
+### Inputs
+
+| Name | Required | Description
+|------|----------|-------------
+| `driver-opts` | no | List of additional driver-specific options. See https://github.com/docker/buildx/blob/master/docs/reference/buildx_create.md#driver-opt
